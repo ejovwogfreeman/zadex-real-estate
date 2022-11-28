@@ -1,6 +1,5 @@
 import React from "react";
 import "../css/General.css";
-import Header3 from "../components/Header3";
 import { Link } from "react-router-dom";
 import {
   FaFacebookSquare,
@@ -15,7 +14,6 @@ const Timeline = () => {
   return (
     <div>
       <ScrollToTop />
-      <Header3 />
       <div className="timeline-comp">
         <div className="abs">
           <div className="img">

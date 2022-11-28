@@ -3,23 +3,10 @@ import "../css/Navbar.css";
 import NavbarMobile from "./NavbarMobile";
 import { AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import { UserContext } from "../context/UserContext";
 import { BiPhoneCall } from "react-icons/bi";
-import { getToken } from "../api";
 
 const Navbar = () => {
-  // const token = getToken;
-  const [UserState, setUserState] = useContext(UserContext);
-
-  // console.log(UserState);
-  let user;
-  if (UserState) {
-    user = UserState.data;
-  } else {
-    user = null;
-  }
   const [open, setOpen] = useState(false);
-  // const [UserState, setUserState] = React.useContext(UserContext);
 
   const handleOpen = () => {
     setOpen(false);
@@ -36,10 +23,10 @@ const Navbar = () => {
           </div>
           <ul className="links">
             <li>
-              <Link to="/">Hot Deals</Link>
+              <Link to="/hot_deals">Hot Deals</Link>
             </li>
             <li>
-              <Link to="/about">Elite Service Plan</Link>
+              <Link to="/elite_service_plans">Elite Service Plan</Link>
             </li>
             <li>
               <Link to="/timeline">Housing</Link>
@@ -51,18 +38,18 @@ const Navbar = () => {
               <Link to="/projects">Information</Link>
             </li>
             <li>
-              <Link to="/contact">Contact Us</Link>
+              <Link to="/contact_us">Contact Us</Link>
             </li>
             <li>
-              <Link to="/blog">Careers</Link>
+              <Link to="/career">Careers</Link>
             </li>
             <li>
-              <Link to="/blog">About Us</Link>
+              <Link to="/about">About Us</Link>
             </li>
             <li>
-              <Link to="/blog">
+              <a href="tel:+(234) 90909090777">
                 <BiPhoneCall /> +(234) 90909090777
-              </Link>
+              </a>
             </li>
           </ul>
           <div className="right">

@@ -1,9 +1,7 @@
 import React from "react";
 import "../css/General.css";
 import "../css/About.css";
-import Header2 from "../components/Header2";
 import Contact from "../components/Contact";
-import Bible2 from "../components/Bible2";
 import { Link } from "react-router-dom";
 import ScrollToTop from "../components/ScrollToTop";
 import img from "../assets/img1.jpg";
@@ -12,8 +10,6 @@ const About = () => {
   return (
     <div style={{ textAlign: "justify" }}>
       <ScrollToTop />
-      <Header2 />
-      <Bible2 />
       <div className="about-text">
         <div className="text">
           <h1>The Adventure Begins</h1>
