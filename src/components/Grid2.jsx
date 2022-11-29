@@ -39,15 +39,12 @@ const data = [
   },
 ];
 
-const Grid = () => {
+const Grid2 = () => {
   return (
     <div className="py-5 bg-light text-center">
-      <h3>Orwell Homes Everywhere</h3>
-      <p className="mt-2">
-        Explore our estates nationwide, whether you’re looking to build, buy or
-        invest, <br /> we will kick you off to a great and lasting experience
-      </p>
-      <div className="grid-container pt-3">
+      <h3>check Our Selection of Finest Properties</h3>
+      <p className="mb-0 mt-2">with world class facilities and Location</p>
+      <div className="grid-container py-5">
         {data.map((x) => {
           return (
             <div className="grid-card">
@@ -55,18 +52,16 @@ const Grid = () => {
               <div className="content text-start p-2 pb-3">
                 <p className="m-0">{x.properties}</p>
                 <p className="m-0 mb-2">{x.state}</p>
-                <small className="m-0">
-                  <Link to="/" className="bg-dark text-light p-2 rounded">
-                    Lean More...
-                  </Link>
-                </small>
               </div>
             </div>
           );
         })}
       </div>
+      <Link to="/" className="bg-dark text-light p-2 rounded">
+        Lean More...
+      </Link>
     </div>
   );
 };
 
-export default Grid;
+export default Grid2;

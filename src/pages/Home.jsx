@@ -1,22 +1,20 @@
 import React from "react";
-// import Header from "../components/Header";
-import About from "../components/About";
-import News from "../components/News";
 import ScrollToTop from "../components/ScrollToTop";
 import HeaderComp from "../components/HeaderComp";
+import AboutGrid from "../components/AboutGrid";
 import Slider from "../components/Slider";
 import Grid from "../components/Grid";
+import Grid2 from "../components/Grid2";
 
 const Home = () => {
   return (
     <div>
       <ScrollToTop />
       <HeaderComp />
-      <About />
+      <AboutGrid />
       <Grid />
       <Slider />
-      <Grid />
-      <News />
+      <Grid2 />
     </div>
   );
 };

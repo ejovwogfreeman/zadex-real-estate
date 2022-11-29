@@ -4,6 +4,7 @@ import NavbarMobile from "./NavbarMobile";
 import { AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { BiPhoneCall } from "react-icons/bi";
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -18,7 +19,7 @@ const Navbar = () => {
         <div className="main-nav">
           <div className="logo">
             <Link to="/">
-              <h4>Adron Homes</h4>
+              <img src={logo} alt="" width="100px" />
             </Link>
           </div>
           <ul className="links">
@@ -26,18 +27,18 @@ const Navbar = () => {
               <Link to="/hot_deals">Hot Deals</Link>
             </li>
             <li>
-              <Link to="/elite_service_plans">Elite Service Plan</Link>
+              <Link to="/elite_service_plans">Elite Service</Link>
             </li>
             <li>
-              <Link to="/timeline">Housing</Link>
+              <Link to="/timeline">Houses</Link>
             </li>
             <li>
-              <Link to="/team">Estate</Link>
+              <Link to="/team">Estates</Link>
             </li>
             <li>
               <Link to="/projects">Information</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/contact_us">Contact Us</Link>
             </li>
             <li>
@@ -50,7 +51,7 @@ const Navbar = () => {
               <a href="tel:+(234) 90909090777">
                 <BiPhoneCall /> +(234) 90909090777
               </a>
-            </li>
+            </li> */}
           </ul>
           <div className="right">
             <span className="mobileNav">

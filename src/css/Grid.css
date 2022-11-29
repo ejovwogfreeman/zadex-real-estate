@@ -11,8 +11,9 @@
 .grid-container .grid-card img {
   width: 100%;
   border-radius: 10px;
+  filter: brightness(50%);
 }
-.grid-container .grid-card p {
+.grid-container .grid-card .content {
   position: absolute;
   bottom: 0%;
   color: white;

@@ -2,9 +2,10 @@ import React from "react";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import img1 from "../assets/img1.jpg";
-import img2 from "../assets/img2.jpg";
-import img3 from "../assets/img3.jpg";
+import img1 from "../assets/house1.jpg";
+import img2 from "../assets/house2.jpg";
+import img3 from "../assets/house3.jpg";
+import img4 from "../assets/house4.jpg";
 import "../css/Slider.css";
 import { Link } from "react-router-dom";
 
@@ -37,23 +38,44 @@ const Slider = () => {
     <div className="bg-dark text-center text-light py-5">
       <h1 className="display-lg-3 display-6">Explore Our Housing Products</h1>
       <OwlCarousel
-        className="owl-theme mt-0 py-4 px-lg-4 px-2 custom-owl"
+        className="owl-theme mt-0 py-5 px-lg-4 px-2 custom-owl"
         {...options}
       >
         <div className="item">
           <img src={img1} alt="" />
           <Link to="/find_apartment" className="bg"></Link>
-          <p className="h3-lg h4">Lekki Phase 1</p>
+          <div className="div">
+            <small className="h6 p-1 bg-success">FOR SALE</small>
+            <small className="h6 p-1 bg-success">HOT DEALS</small>
+          </div>
+          <p className="bg-dark">Ocean View Series</p>
         </div>
         <div className="item">
           <img src={img2} alt="" />
           <Link to="/find_apartment" className="bg"></Link>
-          <p className="h3-lg h4">Lekki Orchid District</p>
+          <div className="div">
+            <small className="h6 p-1 bg-success">FOR SALE</small>
+            <small className="h6 p-1 bg-success">HOT DEALS</small>
+          </div>
+          <p className="bg-dark">Cranberry Series</p>
         </div>
         <div className="item">
           <img src={img3} alt="" />
           <Link to="/find_apartment" className="bg"></Link>
-          <p className="h3-lg h4">Epe New Town</p>
+          <div className="div">
+            <small className="h6 p-1 bg-success">FOR SALE</small>
+            <small className="h6 p-1 bg-success">HOT DEALS</small>
+          </div>
+          <p className="bg-dark">Beach Home Villa</p>
+        </div>
+        <div className="item">
+          <img src={img4} alt="" />
+          <Link to="/find_apartment" className="bg"></Link>
+          <div className="div">
+            <small className="h6 p-1 bg-success">FOR SALE</small>
+            <small className="h6 p-1 bg-success">HOT DEALS</small>
+          </div>
+          <p className="bg-dark">Mangifera Series</p>
         </div>
       </OwlCarousel>
       <Link to="/" className="slider-link">

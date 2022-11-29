@@ -6,13 +6,12 @@
   position: relative;
 }
 
-.owl-theme .item p {
+.owl-theme .item .content {
   position: absolute;
   color: white;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translateX(-50%);
-
   width: 100%;
   text-align: center;
 }
@@ -20,7 +19,7 @@
 .owl-theme .item img {
   object-fit: cover;
   height: 100%;
-  filter: brightness(50%);
+  filter: brightness(30%);
 }
 
 .owl-theme .item .bg {
@@ -78,8 +77,24 @@
 
 .custom-owl .item img {
   border-radius: 10px;
+  filter: brightness(50%);
 }
 
+.custom-owl .item .div {
+  position: absolute;
+  bottom: 15%;
+}
+.custom-owl .item .div .h6 {
+  font-size: 10px;
+  margin-left: 2px;
+}
+
+.custom-owl .item p {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 0%;
+}
 @media screen and (max-width: 960px) {
   .owl-theme .item {
     height: 300px;

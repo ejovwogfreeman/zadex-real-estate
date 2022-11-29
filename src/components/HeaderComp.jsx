@@ -2,9 +2,10 @@ import React from "react";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import img1 from "../assets/img1.jpg";
-import img2 from "../assets/img2.jpg";
-import img3 from "../assets/img3.jpg";
+import img1 from "../assets/house1.jpg";
+import img2 from "../assets/house2.jpg";
+import img3 from "../assets/house3.jpg";
+import img4 from "../assets/house4.jpg";
 import "../css/Slider.css";
 import { Link } from "react-router-dom";
 
@@ -29,18 +30,51 @@ const HeaderComp = () => {
     <OwlCarousel className="owl-theme" {...options}>
       <div className="item">
         <img src={img1} alt="" />
-        <Link to="/find_apartment" className="bg"></Link>
-        <p className="h3-lg h4">Lekki Phase 1</p>
+        <div className="content">
+          <p className="h3">Its Great To Be Home</p>
+          <p className="h1 mt-4 mb-5">
+            Find The House Of Your Dream <br /> Using Our Platform
+          </p>
+          <Link to="/" className="bg-dark text-light p-3 rounded">
+            Lean More...
+          </Link>
+        </div>
       </div>
       <div className="item">
         <img src={img2} alt="" />
-        <Link to="/find_apartment" className="bg"></Link>
-        <p className="h3-lg h4">Lekki Orchid District</p>
+        <div className="content">
+          <p className="h3">Its Great To Be Home</p>
+          <p className="h1 mt-4 mb-5">
+            Find The House Of Your Dream <br /> Using Our Platform
+          </p>
+          <Link to="/" className="bg-dark text-light p-3 rounded">
+            Lean More...
+          </Link>
+        </div>
       </div>
       <div className="item">
         <img src={img3} alt="" />
-        <Link to="/find_apartment" className="bg"></Link>
-        <p className="h3-lg h4">Epe New Town</p>
+        <div className="content">
+          <p className="h3">Its Great To Be Home</p>
+          <p className="h1 mt-4 mb-5">
+            Find The House Of Your Dream <br /> Using Our Platform
+          </p>
+          <Link to="/" className="bg-dark text-light p-3 rounded">
+            Lean More...
+          </Link>
+        </div>
+      </div>
+      <div className="item">
+        <img src={img4} alt="" />
+        <div className="content">
+          <p className="h3">Its Great To Be Home</p>
+          <p className="h1 mt-4 mb-5">
+            Find The House Of Your Dream <br /> Using Our Platform
+          </p>
+          <Link to="/" className="bg-dark text-light p-3 rounded">
+            Lean More...
+          </Link>
+        </div>
       </div>
     </OwlCarousel>
   );

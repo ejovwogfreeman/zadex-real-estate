@@ -8,6 +8,7 @@ import {
   FaInstagramSquare,
   FaLinkedin,
 } from "react-icons/fa";
+import logo from "../assets/logo.png";
 
 const Footer = () => {
   return (
@@ -17,8 +18,12 @@ const Footer = () => {
         style={{ overflowX: "hidden" }}
       >
         <div className="first">
-          <h4 className="mb-3">Adron Homes</h4>
-          <h5>About Adron</h5>
+          <img
+            src={logo}
+            alt=""
+            style={{ width: "80px", marginBottom: "30px" }}
+          />
+          <h5>About Orwell</h5>
           <p>
             We are daily driven to keep our promise of affordable housing
             products with a singular mission to exceed expectations.
@@ -73,7 +78,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="sub-footer py-3 bg-primary">
-        <p className="mt-3">© Adron Homes - All rights reserved</p>
+        <p className="mt-3">© Orwell Homes - All rights reserved</p>
         <div className="icons">
           <a href="https://facebook.com">
             <FaFacebookSquare />
