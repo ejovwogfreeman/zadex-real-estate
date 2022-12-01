@@ -31,7 +31,7 @@ const data = [
 
 const AboutGrid = () => {
   return (
-    <div className="py-5 bg-success">
+    <div className="py-5" style={{ background: "#b8860b" }}>
       <h3 className="text-center text-light">Why Choose Orwell?</h3>
       <div className="grid-container pt-5">
         {data.map((x) => {

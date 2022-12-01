@@ -35,7 +35,7 @@ const HeaderComp = () => {
           <p className="h1 mt-4 mb-5">
             Find The House Of Your Dream <br /> Using Our Platform
           </p>
-          <Link to="/" className="bg-dark text-light p-3 rounded">
+          <Link to="/" className="btn btn-outline-warning py-2">
             Lean More...
           </Link>
         </div>
@@ -47,7 +47,7 @@ const HeaderComp = () => {
           <p className="h1 mt-4 mb-5">
             Find The House Of Your Dream <br /> Using Our Platform
           </p>
-          <Link to="/" className="bg-dark text-light p-3 rounded">
+          <Link to="/" className="btn btn-outline-warning py-2">
             Lean More...
           </Link>
         </div>
@@ -59,7 +59,7 @@ const HeaderComp = () => {
           <p className="h1 mt-4 mb-5">
             Find The House Of Your Dream <br /> Using Our Platform
           </p>
-          <Link to="/" className="bg-dark text-light p-3 rounded">
+          <Link to="/" className="btn btn-outline-warning py-2">
             Lean More...
           </Link>
         </div>
@@ -71,7 +71,7 @@ const HeaderComp = () => {
           <p className="h1 mt-4 mb-5">
             Find The House Of Your Dream <br /> Using Our Platform
           </p>
-          <Link to="/" className="bg-dark text-light p-3 rounded">
+          <Link to="/" className="btn btn-outline-warning py-2">
             Lean More...
           </Link>
         </div>

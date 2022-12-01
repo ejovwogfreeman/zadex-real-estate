@@ -9,37 +9,53 @@ import img4 from "../assets/house4.jpg";
 const data = [
   {
     img: img1,
-    properties: "21 properties",
-    state: "Ogun State",
+    sale: true,
+    description: "Emitares Park and Gardens phase 2(Ocean-view Estate)",
+    price: "6000000",
+    size: "540sqm",
   },
   {
     img: img2,
-    properties: "5 properties",
-    state: "Lagos State",
+    sale: true,
+    description: " Rehoboth Park and Gardens phase 2 Extension",
+    price: "18000000",
+    size: "500sqm",
   },
   {
     img: img3,
-    properties: "3 properties",
-    state: "Abuja",
+    sale: true,
+    description: "New York Park and Gard",
+    price: "30000000",
+    size: "450sq",
   },
   {
     img: img4,
-    properties: "6 properties",
-    state: "Oyo State",
+    sale: true,
+    description: "Imperial Park and Gardens(The Sugarland Estate)",
+    price: "4500000",
+    size: "600sqm",
   },
   {
     img: img1,
-    properties: "3 properties",
-    state: "Nasarawa State",
+    sale: true,
+    description: "Grandview Park & Gardens Phase 1 extension",
+    price: "3000000",
+    size: "648sqm",
   },
   {
     img: img2,
-    properties: "8 properties",
-    state: "Delta State",
+    sale: true,
+    description: "West Park & Gardens phase 1 Extension, Oleyo",
+    price: "4500000",
+    size: "540sqm",
   },
 ];
 
 const Grid2 = () => {
+  function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
+
   return (
     <div className="py-5 bg-light text-center">
       <h3>check Our Selection of Finest Properties</h3>
@@ -49,16 +65,22 @@ const Grid2 = () => {
           return (
             <div className="grid-card">
               <img src={x.img} alt="" />
-              <div className="content text-start p-2 pb-3">
-                <p className="m-0">{x.properties}</p>
-                <p className="m-0 mb-2">{x.state}</p>
+              <div className="d-block text-start my-1">
+                <small className="bg-success text-light p-1 rounded">
+                  {x.sale === true ? "FOR SALE" : null}
+                </small>
+              </div>
+              <div className="text-start p-2 pb-3 bg-dark text-light rounded">
+                <p className="m-0">{x.description}</p>
+                <p className="m-0">₦{numberWithCommas(x.price)}</p>
+                <p className="m-0">{x.size}</p>
               </div>
             </div>
           );
         })}
       </div>
       <Link to="/" className="bg-dark text-light p-2 rounded">
-        Lean More...
+        Load More...
       </Link>
     </div>
   );
