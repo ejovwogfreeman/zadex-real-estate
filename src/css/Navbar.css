@@ -4,6 +4,8 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 10000;
+  box-shadow: 2px 1px 5px ;
+
 }
 nav a {
   color: rgb(31, 31, 71);
@@ -132,6 +134,62 @@ nav a {
 
 .showall {
   display: none;
+}
+.drop-down__cont{
+  /* display: inline-flex; */
+  margin: 7% 0 0 0;
+  /* padding-bottom: 4rem; */
+  width: fit-content;
+  text-align: center;
+  position: relative;
+  color: inherit;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.drop-down__cont li{
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 1.8rem ;
+  display: block;
+  text-align:center;
+
+}
+
+.drop-down__item{
+  margin-top: 0;
+  position: absolute;
+  width: 0;
+  opacity: 0;
+  user-select: none;
+  pointer-events: none;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  /* width: 150px; */
+  background-color: white;
+  box-shadow: 2px 1px 5px ;
+  border-radius: 0 0 .5rem .5rem;
+  /* padding: 1rem 1%; */
+}
+.drop-down__item li{
+  /* margin:0; */
+  width: 100%;
+  margin-bottom: 5px;
+  user-select: none;
+  padding: 0;
+
+
+}
+.drop-down__cont:hover .drop-down__item{
+  width: 150px;
+  opacity: 1;
+  transition: var(--transition);
+  user-select: all;
+  pointer-events: all;
 }
 
 @media only screen and (max-width: 1175px) {

@@ -1,23 +1,23 @@
 import "./App.css";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Timeline from "./pages/Timeline";
-import Team from "./pages/Team";
-import NotFound from "./pages/NotFound";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { About, Home, NotFound, Partners, Projects, Services, Teams, Timeline } from "./pages";
+import { Footer, NavBar } from "./components";
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar />
+        <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/about">
+            <Route index element={<About />} />
+            <Route path="/about/team" element={<Teams />} />
+            <Route path="/about/partners" element={<Partners />} />
+            <Route path="/about/services" element={<Services />} />
+          </Route>
           <Route path="/timeline" element={<Timeline />} />
-          <Route path="/team" element={<Team />} />
+          <Route path="/project" element={<Projects />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
