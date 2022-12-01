@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import "../css/Navbar.css";
 import NavbarMobile from "./NavbarMobile";
-import { AiOutlineMenu } from "react-icons/ai";
+import { AiFillCaretDown, AiOutlineMenu } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { BiPhoneCall } from "react-icons/bi";
 import logo from "../assets/logo.png";
@@ -29,6 +29,28 @@ const Navbar = () => {
             <li>
               <Link to="/elite_service_plans">Elite Service</Link>
             </li>
+            <div className="drop-down__cont">
+              <li>
+                <Link to="">
+                  about <AiFillCaretDown className="icon" />
+                </Link>
+              </li>
+              {/* <Link to="/about">About Us</Link> */}
+              <div className="drop-down__item">
+                <li>
+                  <Link to="/about">about us</Link>
+                </li>
+                <li>
+                  <Link to="/about/team">our team</Link>
+                </li>
+                <li>
+                  <Link to="/about/services">our services</Link>
+                </li>
+                <li>
+                  <Link to="/about/partners">our partners</Link>
+                </li>
+              </div>
+            </div>
             <li>
               <Link to="/timeline">Houses</Link>
             </li>
@@ -43,9 +65,6 @@ const Navbar = () => {
             </li>
             <li>
               <Link to="/career">Careers</Link>
-            </li>
-            <li>
-              <Link to="/about">About Us</Link>
             </li>
             <li>
               <a href="tel:+(234) 90909090777">

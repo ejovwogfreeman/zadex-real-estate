@@ -19,7 +19,7 @@ const Contact = ({ text, text2 }) => {
   return (
     <div className="contact-cont">
       <div className="logo">
-        <h3>Hope4Afica</h3>
+        <h3>Write Us a Message</h3>
       </div>
       <p>
         {text}
@@ -47,7 +47,7 @@ const Contact = ({ text, text2 }) => {
             </label>
             <input
               type="text"
-              placeholder="Your First Name"
+              placeholder="Your Last Name"
               value={lastname}
               name="lastname"
               onChange={handleChange}
@@ -62,7 +62,7 @@ const Contact = ({ text, text2 }) => {
             </label>
             <input
               type="email"
-              placeholder="Your First Name"
+              placeholder="Your Email"
               value={email}
               name="email"
               onChange={handleChange}
@@ -75,7 +75,7 @@ const Contact = ({ text, text2 }) => {
             </label>
             <input
               type="text"
-              placeholder="Your First Name"
+              placeholder="Subject"
               value={subject}
               name="subject"
               onChange={handleChange}

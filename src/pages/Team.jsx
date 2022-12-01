@@ -1,127 +1,90 @@
 import React from "react";
 import "../css/General.css";
-import img from "../assets/img1.jpg";
+import "../css/Team.css";
 import {
   FaFacebookSquare,
   FaTwitterSquare,
   FaInstagramSquare,
   FaLinkedin,
 } from "react-icons/fa";
-import ScrollToTop from "../components/ScrollToTop";
-
+import { Contact } from ".";
+import OwlCarousel from "react-owl-carousel";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
+import { ScrollToTop } from "../components";
 const Team = () => {
+  const options = {
+    loop: true,
+    margin: 10,
+    nav: true,
+    navText: ["&#x2770;", "&#x2771;"],
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    smartSpeed: 700,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      1200: {
+        items: 3,
+      },
+    },
+  };
   return (
-    <div className="container" style={{ color: "white" }}>
+    <section className="section team">
       <ScrollToTop />
-      <div className="team-heading" style={{ color: "black" }}>
-        <h1>HOPE4AFRICA Team.</h1>
-        <p>DIRECTORS, MANAGERS and ADVISORS</p>
+      <div className="heading heading-left">
+        <h2>meet our team</h2>
+        <p>
+          Meet our leadership team who is helping customers like you find a
+          place they love.
+        </p>
       </div>
-      <div className="team-members">
-        <div className="cont">
-          <div className="img">
-            <img src={img} alt="" />
+      <div className="carousel-container">
+        <OwlCarousel
+          className="carousel-theme mt-0 py-0 px-lg-6 px-2 inner-wrapper"
+          {...options}
+        >
+          <div className="item">
+            <div className="img-container">
+              <img src="" alt="" />
+            </div>
+            <div className="title">
+              <p>
+                Margaret Oki <br /> CEO
+              </p>
+            </div>
           </div>
-          <div className="text">
-            <h3>Apama</h3>
-            <p>
-              Field Director of Bible
-              <br /> Distribution
-            </p>
+          <div className="item">
+            <div className="img-container">
+              <img src="" alt="" />
+            </div>
+            <div className="title">
+              <p className=" title">
+                Ben Oki
+                <br /> CFO
+              </p>
+            </div>
           </div>
-        </div>
-        <div className="cont">
-          <div className="img">
-            <img src={img} alt="" />
+          <div className="item">
+            <div className="img-container">
+              <img src="" alt="" />
+            </div>
+            <div className="title">
+              <p>
+                Odafe Otobo
+                <br /> Business Development Manager
+              </p>
+            </div>
           </div>
-          <div className="text">
-            <h3>Akong</h3>
-            <p>
-              Field Director of Chicken <br /> Operations
-            </p>
-          </div>
-        </div>
-        <div className="cont">
-          <div className="img">
-            <img src={img} alt="" />
-          </div>
-          <div className="text">
-            <h3>Grace</h3>
-            <p>
-              Field Director of House of <br /> Grace
-            </p>
-          </div>
-        </div>
-        <div className="cont">
-          <div className="img">
-            <img src={img} alt="" />
-          </div>
-          <div className="text">
-            <h3>Juliette Anyawara</h3>
-            <p>
-              Assistant Director of Childrens <br /> Welfare
-            </p>
-          </div>
-        </div>
-        <div className="cont">
-          <div className="img">
-            <img src={img} alt="" />
-          </div>
-          <div className="text">
-            <h3>Pastor Augustine Ojeka</h3>
-            <p>Assistant Director of Finances</p>
-          </div>
-        </div>
-        <div className="cont">
-          <div className="img">
-            <img src={img} alt="" />
-          </div>
-          <div className="text">
-            <h3>Bishop David Anaywara</h3>
-            <p>Director of Hope4Africa</p>
-          </div>
-        </div>
-        <div className="cont">
-          <div className="img">
-            <img src={img} alt="" />
-          </div>
-          <div className="text">
-            <h3>Lion of Judah</h3>
-            <p>
-              Executive Director of <br />
-              Hope4Africa
-            </p>
-          </div>
-        </div>
+        </OwlCarousel>
       </div>
-      <div className="follow">
-        <div>
-          <h3>Email</h3>
-          <p>info@hope4africa.foundation</p>
-        </div>
-        <div>
-          <h3>Call</h3>
-          <p>info@hope4africa.foundation</p>
-        </div>
-        <div>
-          <h3>Follow</h3>
-          <div className="icons">
-            <a href="https://facebook.com">
-              <FaFacebookSquare />
-            </a>
-            <a href="https://twitter.com">
-              <FaTwitterSquare />
-            </a>
-            <a href="https://instagram.com">
-              <FaInstagramSquare />
-            </a>
-            <a href="https://linkedin.com">
-              <FaLinkedin />
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+      <Contact />
+    </section>
   );
 };
 
