@@ -170,7 +170,6 @@ nav a {
   flex-direction: column;
   background-color: transparent;
   padding: 0px;
-  box-shadow: 2px 1px 5px;
   border-radius: 0 0 0.5rem 0.5rem;
 }
 .drop-down__item li {
@@ -179,7 +178,7 @@ nav a {
   padding: 0;
 }
 .drop-down__item li a {
-  background-color: white;
+  background-color: rgb(221, 205, 205);
   display: flex;
   align-items: center;
   justify-content: center;
