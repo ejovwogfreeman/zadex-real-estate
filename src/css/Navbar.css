@@ -4,7 +4,7 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 10000;
-  box-shadow: 2px 1px 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 nav a {
   color: rgb(31, 31, 71);
@@ -178,7 +178,7 @@ nav a {
   padding: 0;
 }
 .drop-down__item li a {
-  background-color: rgb(221, 205, 205);
+  background-color: rgb(206, 206, 206);
   display: flex;
   align-items: center;
   justify-content: center;

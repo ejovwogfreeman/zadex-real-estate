@@ -5,7 +5,7 @@ import ScrollToTop from "../components/ScrollToTop";
 
 const Information = () => {
   return (
-    <div className="container">
+    <div className="cont">
       <ScrollToTop />
       <p>Information</p>
     </div>

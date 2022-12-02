@@ -8,7 +8,6 @@ import {
   Projects,
   Services,
   Teams,
-  Timeline,
 } from "./pages";
 import HotDeals from "./pages/HotDeals";
 import EliteService from "./pages/EliteService";
@@ -32,7 +31,6 @@ function App() {
           </Route>
           <Route path="/project" element={<Projects />} />
           <Route path="hot_deals" element={<HotDeals />} />
-          <Route path="elite_service_plans" element={<EliteService />} />
           <Route path="elite_service_plans" element={<EliteService />} />
           <Route path="houses" element={<Houses />} />
           <Route path="estates" element={<Estates />} />

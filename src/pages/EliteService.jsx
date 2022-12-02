@@ -5,7 +5,7 @@ import ScrollToTop from "../components/ScrollToTop";
 
 const EliteService = () => {
   return (
-    <div className="container">
+    <div className="cont">
       <ScrollToTop />
       <p>Elite Service Plans</p>
     </div>
