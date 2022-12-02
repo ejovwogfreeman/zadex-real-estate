@@ -159,26 +159,37 @@ nav a {
 .drop-down__item {
   margin-top: 0;
   position: absolute;
+  margin-left: -50px;
   width: 0;
   opacity: 0;
   user-select: none;
   pointer-events: none;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-  /* width: 150px; */
-  background-color: white;
+  background-color: transparent;
+  padding: 0px;
   box-shadow: 2px 1px 5px;
   border-radius: 0 0 0.5rem 0.5rem;
-  /* padding: 1rem 1%; */
 }
 .drop-down__item li {
-  /* margin:0; */
   width: 100%;
-  margin-bottom: 5px;
   user-select: none;
   padding: 0;
+}
+.drop-down__item li a {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  transition: 0.5s ease-in-out;
+}
+.drop-down__item li a:hover {
+  background-color: rgb(184, 134, 11);
+  color: white;
 }
 .drop-down__cont:hover .drop-down__item {
   width: 150px;

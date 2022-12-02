@@ -52,13 +52,13 @@ const Navbar = () => {
               </div>
             </div>
             <li>
-              <Link to="/timeline">Houses</Link>
+              <Link to="/houses">Houses</Link>
             </li>
             <li>
-              <Link to="/team">Estates</Link>
+              <Link to="/estates">Estates</Link>
             </li>
             <li>
-              <Link to="/projects">Information</Link>
+              <Link to="/information">Information</Link>
             </li>
             {/* <li>
               <Link to="/contact_us">Contact Us</Link>
