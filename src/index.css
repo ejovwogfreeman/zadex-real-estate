@@ -22,11 +22,11 @@ code {
   box-sizing: border-box;
 }
 
-:root{
-  --transition: all .5s ease-in-out;
+:root {
+  --transition: all 0.5s ease-in-out;
   --white-color: #ffffff;
-  --sky-blue-color:rgb(101, 101, 241);
-  --honeydew-color:#f0fff0;
+  --sky-blue-color: rgb(101, 101, 241);
+  --honeydew-color: #f0fff0;
   --border-radius: 1rem;
   --transparent-black-bg: rgba(0, 0, 0, 0.788);
   --black-color: #000000;
@@ -60,7 +60,7 @@ h6 {
   padding: 0px;
 }
 
-.heading{
+.heading {
   width: 100%;
   display: flex;
   align-items: center;
@@ -69,71 +69,58 @@ h6 {
   text-align: center;
 }
 
-.heading h2{
+.heading h2 {
   font-size: 2.5rem;
-  font-family: 'Lobster', cursive;
-
-
+  font-family: "Lobster", cursive;
 }
-.heading h1{
+.heading h1 {
   font-size: 2.5rem;
-  font-family: 'Lobster', cursive;
-
-
+  font-family: "Lobster", cursive;
 }
 
-.heading > *{
+.heading > * {
   text-transform: capitalize;
   margin-bottom: 2rem;
   max-width: 1200px;
-
-  
 }
 
-.heading p{
+.heading p {
   font-size: 1rem;
   text-transform: unset;
   width: 100%;
   text-align: left;
 }
 
-.heading-left{
+.heading-left {
   align-items: flex-start;
   justify-content: flex-start;
   text-align: left;
-  
-  
 }
 
-.heading-left h2{
+.heading-left h2 {
   font-size: 1.5rem;
 }
 
-.section{
+.section {
   width: 100%;
   min-height: 50vh;
   padding: 8rem 2% 2rem;
-
-
 }
 
-.box{
+.box {
   padding: 1rem 2%;
   width: 100%;
-  box-shadow: 2px 2px 5px ;
+  box-shadow: 2px 2px 5px;
   border-radius: 1rem;
   background-color: white;
 }
 
-.box  p{
+.box p {
   width: 100%;
-
 }
-.box  h2{
+.box h2 {
   font-size: 1.5rem;
-  font-family: 'Lobster', cursive;
-
-
+  font-family: "Lobster", cursive;
 }
 
 .picBox{

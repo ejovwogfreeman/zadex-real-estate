@@ -1,5 +1,6 @@
 import React from "react";
 import { Contact, ScrollToTop } from "../components";
+import "../css/Services.css";
 
 const Services = () => {
   return (

@@ -66,7 +66,12 @@ const Footer = () => {
                 aria-describedby="button-addon2"
                 style={{ margin: "0px" }}
               />
-              <button class="btn btn-primary" type="button" id="button-addon2">
+              <button
+                class="btn"
+                type="button"
+                id="button-addon2"
+                style={{ background: "#000052", color: "white" }}
+              >
                 Submit
               </button>
             </div>
@@ -77,7 +82,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <div className="sub-footer py-3 bg-primary">
+      <div className="sub-footer py-3">
         <p className="mt-3">© Orwell Homes - All rights reserved</p>
         <div className="icons">
           <a href="https://facebook.com">

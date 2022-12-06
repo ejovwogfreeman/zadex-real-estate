@@ -1,9 +1,10 @@
-.about-page{
-  background-color:var(--honeydew-color) ;
+.about-page {
+  background-color: var(--honeydew-color);
   font-size: 1rem;
+  padding: 100px 5%;
 }
 
-.items{
+.items {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
@@ -11,15 +12,12 @@
   align-items: start;
   margin: 0 auto;
 }
-.about-page .item{
+.about-page .item {
   display: grid;
   gap: 2rem;
   max-width: 1200px;
-
 }
 
-.item-right{
+.item-right {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
 }
-

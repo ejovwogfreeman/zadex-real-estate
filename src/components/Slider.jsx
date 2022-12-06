@@ -35,7 +35,10 @@ const Slider = () => {
   };
 
   return (
-    <div className="bg-dark text-center text-light py-5">
+    <div
+      className="text-center text-light py-5"
+      style={{ background: "black" }}
+    >
       <h1 className="display-lg-3 display-6">Explore Our Housing Products</h1>
       <OwlCarousel
         className="owl-theme mt-0 py-5 px-lg-4 px-2 custom-owl"
