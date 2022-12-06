@@ -8,7 +8,7 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 import ScrollToTop from "../components/ScrollToTop";
-import img from "../assets/img1.jpg";
+import img from "../assets/house1.jpg";
 
 const Timeline = () => {
   return (

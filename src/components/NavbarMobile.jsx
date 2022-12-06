@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import "../css/Navbar.css";
 import { Link } from "react-router-dom";
-import { AiOutlineHeart } from "react-icons/ai";
+import { AiFillCaretDown, AiOutlineHeart } from "react-icons/ai";
 import { AiOutlineCloseSquare } from "react-icons/ai";
 
 const NavbarMobile = ({ open, handleOpen }) => {
@@ -23,32 +23,53 @@ const NavbarMobile = ({ open, handleOpen }) => {
             </div>
             <ul className="links mobile-links">
               <li onClick={() => handleOpen()}>
-                <Link to="/">Home</Link>
+                <Link to="/">Hot Deals</Link>
               </li>
+              {/* <li onClick={() => handleOpen()}>
+                <Link to="/elite_service_plans">Elite Service</Link>
+              </li> */}
+              <div className="drop-down__cont">
+                <li>
+                  <Link to="">
+                    about <AiFillCaretDown className="icon" />
+                  </Link>
+                </li>
+                <div className="drop-down__item">
+                  <li onClick={() => handleOpen()}>
+                    <Link to="/about">about us</Link>
+                  </li>
+                  <li onClick={() => handleOpen()}>
+                    <Link to="/about/team">our team</Link>
+                  </li>
+                  <li onClick={() => handleOpen()}>
+                    <Link to="/about/services">our services</Link>
+                  </li>
+                  <li onClick={() => handleOpen()}>
+                    <Link to="/about/partners">our partners</Link>
+                  </li>
+                </div>
+              </div>
               <li onClick={() => handleOpen()}>
-                <Link to="/about">About</Link>
-              </li>
-              <li onClick={() => handleOpen()}>
-                <Link to="/timeline">Timeline</Link>
-              </li>
-              <li onClick={() => handleOpen()}>
-                <Link to="/team">Our Team</Link>
+                <Link to="/timeline">Houses</Link>
               </li>
               <li onClick={() => handleOpen()}>
                 <Link to="/projects">Projects</Link>
               </li>
               <li onClick={() => handleOpen()}>
-                <Link to="/contact">Contact</Link>
+                <Link to="/blog">Blog</Link>
               </li>
               <li onClick={() => handleOpen()}>
-                <Link to="/blog">News</Link>
+                <Link to="/policies">Policies</Link>
               </li>
               <li onClick={() => handleOpen()}>
+                <Link to="/contact">Contact Us</Link>
+              </li>
+              {/* <li onClick={() => handleOpen()}>
                 <Link to="/donate" className="donate">
                   <AiOutlineHeart className="heart" />
                   DONATE
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

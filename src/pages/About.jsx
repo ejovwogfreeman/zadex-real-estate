@@ -1,8 +1,7 @@
 import React from "react";
 import "../css/General.css";
 import "../css/About.css";
-import { ScrollToTop, TextBox } from "../components";
-import { Contact } from ".";
+import { Contact, TextBox, ScrollToTop } from "../components";
 
 const About = () => {
   return (

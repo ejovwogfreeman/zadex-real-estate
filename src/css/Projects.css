@@ -1,0 +1,17 @@
+.project-item__wrapper{
+    background-color: var(--white-color);
+  }
+  .project-item{
+    width: 100%;
+  }
+  .project-item__wrapper .details{
+  background-color:var(--transparent-black-bg);
+  color: var(--white-color);
+  width: 100%;
+  height: 20%;
+  padding: .5rem 1rem;
+  }
+  .project-item__wrapper .details p{
+  text-shadow: 1px 2px 3px var(--black-color);
+  text-transform: capitalize;
+  }

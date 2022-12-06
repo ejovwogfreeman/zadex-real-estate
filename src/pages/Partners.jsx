@@ -1,6 +1,5 @@
 import React from "react";
-import { Contact } from ".";
-import { ScrollToTop } from "../components";
+import { Contact, ScrollToTop } from "../components";
 import "../css/Partners.css";
 
 const Partners = () => {

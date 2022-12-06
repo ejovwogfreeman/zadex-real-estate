@@ -24,11 +24,11 @@ const Navbar = () => {
           </div>
           <ul className="links">
             <li>
-              <Link to="/hot_deals">Hot Deals</Link>
+              <Link to="/">Hot Deals</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/elite_service_plans">Elite Service</Link>
-            </li>
+            </li> */}
             <div className="drop-down__cont">
               <li>
                 <Link to="">
@@ -55,14 +55,21 @@ const Navbar = () => {
               <Link to="/timeline">Houses</Link>
             </li>
             <li>
-              <Link to="/team">Estates</Link>
+              <Link to="/projects">projects</Link>
             </li>
             <li>
-              <Link to="/projects">Information</Link>
+              <Link to="/blog">blog</Link>
+            </li>
+            <li>
+              <Link to="/policies">policies</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact Us</Link>
             </li>
             {/* <li>
-              <Link to="/contact_us">Contact Us</Link>
-            </li>
+              <Link to="/team">Estates</Link>
+            </li> */}
+            {/* 
             <li>
               <Link to="/career">Careers</Link>
             </li>

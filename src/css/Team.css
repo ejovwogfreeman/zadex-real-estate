@@ -42,30 +42,3 @@
   }
   
   
-  .carousel-container .item{
-    /* padding: 1rem 2%; */
-    width: 350px;
-    max-width: 100%;
-    height: 250px;
-    margin: 0 auto 1rem;
-    overflow: hidden;
-    position: relative;
-    box-shadow: 2px 2px 5px;
-    border-radius: var(--border-radius);
-    background-color: var(--white-color);
-  }
-  
-  .img-container img{
-    width: 100%;
-    height: 100%;
-    object-fit:cover;
-  }
-  .item .title{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color:var(--transparent-black-bg);
-  color: var(--white-color);
-  padding: .5rem 1rem;
-  }

@@ -7,11 +7,14 @@ import {
   FaInstagramSquare,
   FaLinkedin,
 } from "react-icons/fa";
-import { Contact } from ".";
+
+import img1 from "../assets/profile-2.jpg";
+import img2 from "../assets/profile-3.jpg";
+import img3 from "../assets/profile-5.jpg";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-import { ScrollToTop } from "../components";
+import { Contact, PicsBox, ScrollToTop } from "../components";
 const Team = () => {
   const options = {
     loop: true,
@@ -49,38 +52,27 @@ const Team = () => {
           className="carousel-theme mt-0 py-0 px-lg-6 px-2 inner-wrapper"
           {...options}
         >
-          <div className="item">
-            <div className="img-container">
-              <img src="" alt="" />
-            </div>
-            <div className="title">
-              <p>
-                Margaret Oki <br /> CEO
-              </p>
-            </div>
-          </div>
-          <div className="item">
-            <div className="img-container">
-              <img src="" alt="" />
-            </div>
-            <div className="title">
-              <p className=" title">
-                Ben Oki
-                <br /> CFO
-              </p>
-            </div>
-          </div>
-          <div className="item">
-            <div className="img-container">
-              <img src="" alt="" />
-            </div>
-            <div className="title">
-              <p>
-                Odafe Otobo
-                <br /> Business Development Manager
-              </p>
-            </div>
-          </div>
+          <PicsBox
+            img={img1}
+            width={350}
+            height={250}
+            text="Margaret Oki"
+            text2="CEO"
+          />
+          <PicsBox
+            img={img2}
+            width={350}
+            height={250}
+            text="Ben Oki"
+            text2="CFO"
+          />
+          <PicsBox
+            img={img3}
+            width={350}
+            height={250}
+            text="Odafe Otobo"
+            text2="Business Development Manager"
+          />
         </OwlCarousel>
       </div>
       <Contact />

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { AiOutlineHeart, AiOutlineMore } from "react-icons/ai";
-import img from "../assets/img1.jpg";
+import img from "../assets/house1.jpg";
 import { Link } from "react-router-dom";
 import profile from "../assets/default.jpg";
 import ScrollToTop from "../components/ScrollToTop";

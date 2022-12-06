@@ -8,31 +8,37 @@ import img4 from "../assets/house4.jpg";
 
 const data = [
   {
+    id: 1,
     img: img1,
     properties: "21 properties",
     state: "Ogun State",
   },
   {
+    id: 2,
     img: img2,
     properties: "5 properties",
     state: "Lagos State",
   },
   {
+    id: 3,
     img: img3,
     properties: "3 properties",
     state: "Abuja",
   },
   {
+    id: 4,
     img: img4,
     properties: "6 properties",
     state: "Oyo State",
   },
   {
+    id: 5,
     img: img1,
     properties: "3 properties",
     state: "Nasarawa State",
   },
   {
+    id: 6,
     img: img2,
     properties: "8 properties",
     state: "Delta State",
@@ -47,7 +53,7 @@ const Grid2 = () => {
       <div className="grid-container py-5">
         {data.map((x) => {
           return (
-            <div className="grid-card">
+            <div key={x.id} className="grid-card">
               <img src={x.img} alt="" />
               <div className="content text-start p-2 pb-3">
                 <p className="m-0">{x.properties}</p>
@@ -58,7 +64,7 @@ const Grid2 = () => {
         })}
       </div>
       <Link to="/" className="bg-dark text-light p-2 rounded">
-        Lean More...
+        Learn More...
       </Link>
     </div>
   );

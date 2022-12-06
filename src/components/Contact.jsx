@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../css/Contact.css";
 
-const Contact = ({ text, text2 }) => {
+const Contact = ({ text, text2, heading, extraText }) => {
   const [formData, setFormData] = useState({
     firstname: "",
     lastname: "",
@@ -19,12 +19,14 @@ const Contact = ({ text, text2 }) => {
   return (
     <div className="contact-cont">
       <div className="logo">
-        <h3>Write Us a Message</h3>
+        <h3>{heading}</h3>
       </div>
       <p>
         {text}
         <br />
         {text2}
+        <br />
+        {extraText}
       </p>
       <form action="" style={{ background: "transparent" }}>
         <div className="row">

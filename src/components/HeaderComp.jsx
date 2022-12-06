@@ -36,7 +36,7 @@ const HeaderComp = () => {
             Find The House Of Your Dream <br /> Using Our Platform
           </p>
           <Link to="/" className="bg-dark text-light p-3 rounded">
-            Lean More...
+            Learn More...
           </Link>
         </div>
       </div>
@@ -48,7 +48,7 @@ const HeaderComp = () => {
             Find The House Of Your Dream <br /> Using Our Platform
           </p>
           <Link to="/" className="bg-dark text-light p-3 rounded">
-            Lean More...
+            Learn More...
           </Link>
         </div>
       </div>
@@ -60,7 +60,7 @@ const HeaderComp = () => {
             Find The House Of Your Dream <br /> Using Our Platform
           </p>
           <Link to="/" className="bg-dark text-light p-3 rounded">
-            Lean More...
+            Learn More...
           </Link>
         </div>
       </div>
@@ -72,7 +72,7 @@ const HeaderComp = () => {
             Find The House Of Your Dream <br /> Using Our Platform
           </p>
           <Link to="/" className="bg-dark text-light p-3 rounded">
-            Lean More...
+            Learn More...
           </Link>
         </div>
       </div>
